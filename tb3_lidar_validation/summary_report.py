@@ -7,7 +7,7 @@ from rclpy.node import Node
 from tb3_lidar_validation.result_utils import RESULTS_FILE
 
 TEST_ORDER = [
-    'lidar_message_rate',
+    'message_rate',
     'range_validation',
     'noise_stationary',
     'front_obstacle_detection',

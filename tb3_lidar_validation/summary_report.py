@@ -7,12 +7,11 @@ from rclpy.node import Node
 from tb3_lidar_validation.result_utils import RESULTS_FILE
 
 TEST_ORDER = [
-    'timed_forward',
-    'timed_back',
-    'odom_forward',
-    'odom_back',
-    'rotate_ccw',
-    'rotate_cw',
+    'lidar_message_rate',
+    'range_validation',
+    'noise_stationary',
+    'front_obstacle_detection',
+    'nearby_obstacle_detection',
 ]
 
 

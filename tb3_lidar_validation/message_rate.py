@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-lidar_message_rate.py
+message_rate.py
 
 Subscribe to the LaserScan topic and measure how consistently messages arrive.
 
@@ -30,7 +30,7 @@ RATE_TOL = 1.5                # acceptable +/- Hz tolerance
 
 class LidarMessageRate(Node):
     def __init__(self):
-        super().__init__('lidar_message_rate')
+        super().__init__('message_rate')
 
         self.sub = self.create_subscription(LaserScan, SCAN_TOPIC, self.scan_cb, 10)
 
@@ -113,7 +113,7 @@ class LidarMessageRate(Node):
             self.get_logger().info(f'Result: {status}')
 
         append_result(
-            test_name='lidar_message_rate',
+            test_name='message_rate',
             status=status,
             measurement=measurement,
             notes=notes
@@ -125,7 +125,7 @@ class LidarMessageRate(Node):
     def loop(self):
         if self.done:
             if time.time() - self.finish_time > 0.5:
-                self.get_logger().info('Exiting lidar_message_rate')
+                self.get_logger().info('Exiting message_rate')
                 rclpy.shutdown()
             return
 

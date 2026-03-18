@@ -102,7 +102,7 @@ ros2 run tb3_lidar_validation nearby_obstacle_detection
 ```
 
 <p align="center">
-  <img src="docs/nearby_stationary.gif" width="700">
+  <img src="docs/nearby_obstacles.gif" width="700">
 </p>
 
 ---

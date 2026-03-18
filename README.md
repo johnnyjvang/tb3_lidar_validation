@@ -249,7 +249,7 @@ tb3_lidar_validation/
 ├── docs/
 │   ├── front_obstacle_pass.gif
 │   ├── front_obstacle_fail.gif
-│   ├── nearby_stationary.gif
+│   ├── nearby_obstacles.gif
 │   ├── message_rate.png
 │   ├── noise_stationary.png
 │   ├── range_validation.png

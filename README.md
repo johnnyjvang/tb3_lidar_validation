@@ -182,7 +182,7 @@ Terminal 1:
 ```bash
 source /opt/ros/jazzy/setup.bash
 export TURTLEBOT3_MODEL=burger
-ros2 launch turtlebot3_gazebo empty_world.launch.py
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
 Terminal 2:
@@ -239,15 +239,6 @@ Identifies nearest obstacle distance
 Provides approximate angle and width of each cluster
 ```
 
----
-
-## Expected Output
-
-<p align="center">
-  <img src="docs/json_output.png" width="700">
-</p>
-
----
 
 ## Package Structure
 
